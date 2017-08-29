@@ -1,6 +1,7 @@
 import React from 'react';
+import Clock from './Clock';
 
-class Timer extends React.Component{
+export default class Timer extends React.Component{
 
   constructor() {
     super()
@@ -11,10 +12,11 @@ class Timer extends React.Component{
     return(
       <div>
         <h1>Timer</h1>
+        <Clock />
       </div>
     )
   };
 
 }
 
-module.exports = Timer;
+// module.exports = Timer;
