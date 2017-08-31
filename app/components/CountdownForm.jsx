@@ -2,9 +2,10 @@ import React from 'react';
 
 class CountdownForm extends React.Component{
 
-  constructor (props) {
-    super(props)
-  }
+    constructor (props) {
+      super(props)
+    }
+
     onSubmit(e){
         e.preventDefault();
         var strSeconds = this.refs.seconds.value;
@@ -13,6 +14,7 @@ class CountdownForm extends React.Component{
             this.props.onSetCountDown(parseInt(strSeconds, 10));
         }
     }
+
     render() {
         return(
             <div>
@@ -21,8 +23,9 @@ class CountdownForm extends React.Component{
                     <button className="button expanded">Start</button>
                 </form>
             </div>
-        )
+        );
     }
+
 }
 
 export default CountdownForm;
